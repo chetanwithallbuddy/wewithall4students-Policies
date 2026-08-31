@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — CodeCourse</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #F7F5FF; --bg-elevated: #FFFFFF; --fg: #1A1A2E; --fg-muted: #6B6B8A;
+            --primary: #6C3CF0; --primary-hover: #5A2DE8; --primary-light: #EDE8FF;
+            --accent: #58C472; --border: #E8E4F3; --shadow-sm: 0 2px 8px rgba(108,60,240,0.08);
+            --radius-md: 16px; --radius-lg: 22px; --transition: 0.2s cubic-bezier(0.4,0,0.2,1);
+        }
+        @media (prefers-color-scheme: dark) {
+            :root { --bg: #0F0F1A; --bg-elevated: #181828; --fg: #F0F0F5; --fg-muted: #8A8AA0;
+                --primary: #9B7BFF; --primary-hover: #B39DFF; --primary-light: #2D1B5E;
+                --accent: #7AE582; --border: #2D2D44; --shadow-sm: 0 2px 8px rgba(0,0,0,0.3); }
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Inter', system-ui, sans-serif; background: var(--bg); color: var(--fg); line-height: 1.7; }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 24px 80px; }
+        header { margin-bottom: 32px; padding-bottom: 24px; border-bottom: 1px solid var(--border); }
+        .back-link { display: inline-flex; align-items: center; gap: 8px; color: var(--primary); text-decoration: none; font-weight: 500; margin-bottom: 16px; }
+        .back-link:hover { text-decoration: underline; }
+        h1 { font-size: clamp(1.75rem, 4vw, 2.5rem); font-weight: 800; line-height: 1.2; margin-bottom: 12px; }
+        .meta { color: var(--fg-muted); font-size: 0.95rem; }
+        article { background: var(--bg-elevated); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 40px; }
+        h2 { font-size: 1.35rem; font-weight: 700; margin: 32px 0 12px; padding-top: 16px; border-top: 1px solid var(--border); }
+        h2:first-of-type { margin-top: 0; padding-top: 0; border-top: none; }
+        h3 { font-size: 1.1rem; font-weight: 600; margin: 20px 0 8px; }
+        p { margin-bottom: 12px; }
+        ul, ol { margin: 12px 0 12px 24px; }
+        li { margin-bottom: 6px; }
+        table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 0.95rem; }
+        th, td { padding: 12px; border: 1px solid var(--border); text-align: left; }
+        th { background: var(--primary-light); font-weight: 600; color: var(--primary); }
+        @media (prefers-color-scheme: dark) { th { background: var(--primary-light); color: var(--primary); } }
+        code { font-family: 'JetBrains Mono', monospace; background: var(--bg); padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+        pre { background: #0D0D1A; color: #E8E8F0; padding: 16px; border-radius: 12px; overflow-x: auto; margin: 16px 0; }
+        pre code { background: none; padding: 0; }
+        .tl-dr { background: var(--primary-light); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 20px; margin: 24px 0; }
+        .tl-dr h3 { margin-top: 0; color: var(--primary); }
+        .badge { display: inline-flex; align-items: center; gap: 6px; padding: 4px 12px; border-radius: 999px; font-size: 0.8rem; font-weight: 600; }
+        .badge-yes { background: var(--accent-light); color: var(--accent); }
+        .badge-no { background: #FDECEA; color: #FF6F61; }
+        @media (prefers-color-scheme: dark) { .badge-no { background: #3D1A16; } }
+        footer { margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--border); text-align: center; color: var(--fg-muted); font-size: 0.9rem; }
+        footer a { color: var(--primary); text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Privacy Policy</h1>
+            <p class="meta">Effective: August 17, 2025 | Last Updated: August 30, 2026 | App: CodeCourse (com.wewithall.codecourse) | Developer: We With All 4 Students</p>
+        </header>
+
+        <article>
+            <h2>1. Overview</h2>
+            <p>CodeCourse is built with privacy as a core principle. This Privacy Policy explains what data the app collects, how it's used, and your rights. <strong>In short: we collect no personal data, no analytics, no tracking, and no accounts are required.</strong></p>
+
+            <h2>2. Data We Collect</h2>
+
+            <h3>2.1 Data Stored Locally on Your Device Only</h3>
+            <p>The following data is stored <strong>exclusively on your device</strong> using Android's local storage (DataStore / SharedPreferences / Room database). It never leaves your phone:</p>
+            <ul>
+                <li><strong>Course Progress:</strong> Which lessons you've completed, quiz scores, challenge stars earned</li>
+                <li><strong>App Preferences:</strong> Theme (light/dark/system), narration speed, reminder time, notification settings</li>
+                <li><strong>User Profile (Optional):</strong> Display name and avatar for certificates (entered manually, stored locally)</li>
+                <li><strong>Certificates Generated:</strong> PDF/PNG certificates you create (saved to your Downloads or app folder)</li>
+                <li><strong>Streaks & XP:</strong> Local gamification counters</li>
+                <li><strong>Downloaded Content:</strong> Lesson audio (TTS) cached for offline playback</li>
+            </ul>
+
+            <h3>2.2 Data We Do NOT Collect</h3>
+            <ul>
+                <li>❌ No personal identifiers (name, email, phone, contacts)</li>
+                <li>❌ No device identifiers (advertising ID, Android ID, IMEI)</li>
+                <li>❌ No location data (GPS, coarse location, network location)</li>
+                <li>❌ No usage analytics, crash reports, or telemetry</li>
+                <li>❌ No network traffic monitoring</li>
+                <li>❌ No account creation, login, or authentication</li>
+                <li>❌ No third-party SDKs for analytics (Firebase, Amplitude, Mixpanel, etc.)</li>
+                <li>❌ No advertising identifiers or ad networks</li>
+            </ul>
+
+            <h2>3. Network Communication</h2>
+            <p>CodeCourse makes <strong>only one optional network call</strong>:</p>
+            <table>
+                <thead><tr><th>Feature</th><th>Network Call</th><th>Data Sent</th><th>Purpose</th></tr></thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Code Runner</strong></td>
+                        <td>HTTPS POST to <code>https://emkc.org/api/v2/piston/execute</code></td>
+                        <td>Code snippet + language + stdin (user-provided only)</td>
+                        <td>Execute code in sandboxed cloud runner</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p><strong>Key points about the Code Runner:</strong></p>
+            <ul>
+                <li>Only triggered when you explicitly tap "Run Code" in a lesson or challenge</li>
+                <li>No metadata, no device info, no user identity sent</li>
+                <li>You can use the app 100% offline — all lessons, quizzes, TTS narration, and certificates work without internet</li>
+                <li>The Piston API is a public open-source code execution service; see their privacy policy at <a href="https://github.com/engineer-man/piston" target="_blank" rel="noopener">github.com/engineer-man/piston</a></li>
+            </ul>
+            <p><strong>No other network requests are made by the app.</strong></p>
+
+            <h2>4. Permissions</h2>
+            <table>
+                <thead><tr><th>Permission</th><th>Required?</th><th>Reason</th></tr></thead>
+                <tbody>
+                    <tr><td><code>INTERNET</code></td><td>Yes</td><td>Only for optional Code Runner (Piston API)</td></tr>
+                    <tr><td><code>POST_NOTIFICATIONS</code></td><td>Yes (Android 13+, runtime)</td><td>Daily learning reminder (user-enabled)</td></tr>
+                    <tr><td><code>ACCESS_NETWORK_STATE</code></td><td>Yes</td><td>Checks for a working connection before attempting the Code Runner network call</td></tr>
+                    <tr><td><code>FOREGROUND_SERVICE</code></td><td>Yes</td><td>Used by the WorkManager library so the daily reminder can be scheduled and delivered reliably</td></tr>
+                    <tr><td><code>RECEIVE_BOOT_COMPLETED</code></td><td>Yes</td><td>Re-schedules the daily reminder after the device restarts, if enabled</td></tr>
+                    <tr><td><code>WAKE_LOCK</code></td><td>Yes</td><td>Used by WorkManager to briefly wake the device to schedule/deliver the reminder</td></tr>
+                    <tr><td><code>READ_EXTERNAL_STORAGE</code> / <code>WRITE_EXTERNAL_STORAGE</code></td><td>No</td><td>Not used (certificates saved via MediaStore)</td></tr>
+                    <tr><td><code>RECORD_AUDIO</code></td><td>No</td><td>Not used (TTS is local synthesis)</td></tr>
+                    <tr><td><code>CAMERA</code></td><td>No</td><td>Not used</td></tr>
+                    <tr><td><code>SCHEDULE_EXACT_ALARM</code></td><td>No</td><td>Not requested — reminder timing uses WorkManager's standard (inexact) scheduling, not exact alarms</td></tr>
+                </tbody>
+            </table>
+            <p><strong>Only one permission requires your explicit runtime approval: <code>POST_NOTIFICATIONS</code></strong> (Android 13 and above), for the optional daily reminder. All other permissions listed above are "normal" permissions that Android grants automatically at install time and do not prompt you.</p>
+
+            <h2>5. Data Retention & Deletion</h2>
+            <ul>
+                <li>All local data persists until you uninstall the app or clear app data in Android Settings</li>
+                <li>You can reset all progress anytime: <strong>Settings → Reset Progress</strong> (deletes local database)</li>
+                <li>Certificates you saved to Downloads remain after uninstall (user-owned files)</li>
+                <li>No server-side data exists to delete</li>
+            </ul>
+
+            <h2>6. Children's Privacy</h2>
+            <p>CodeCourse is designed for learners of all ages, including children under 13. Because we collect <strong>no personal data</strong>, COPPA and GDPR-K do not apply. The app is safe for classroom and home use without parental consent for data collection (since there is none).</p>
+
+            <h2>7. Third-Party Services</h2>
+            <table>
+                <thead><tr><th>Service</th><th>Purpose</th><th>Data Shared</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>Piston API</strong> (emkc.org)</td><td>Code execution</td><td>Only the code you choose to run</td></tr>
+                    <tr><td><strong>Google Play</strong></td><td>App distribution, updates</td><td>Standard Play Console data (install country, device model, Android version) — controlled by Google, not us</td></tr>
+                    <tr><td><strong>System TTS</strong> (optional fallback)</td><td>Voice narration</td><td>None (on-device)</td></tr>
+                </tbody>
+            </table>
+            <p>We do <strong>not</strong> use: Firebase, Google Analytics, Crashlytics, Adjust, AppsFlyer, Meta SDK, Unity Ads, or any other third-party SDK.</p>
+
+            <h2>8. Your Rights</h2>
+            <p>Since we hold no personal data on our servers, there is no "account" to delete or "data" to export from us. Your data lives on your device. You can:</p>
+            <ul>
+                <li><strong>View all local data:</strong> Settings → Export Progress (JSON)</li>
+                <li><strong>Delete all local data:</strong> Settings → Reset Progress, or uninstall the app</li>
+                <li><strong>Opt out of reminders:</strong> Turn off "Daily Reminder" in Settings</li>
+                <li><strong>Use fully offline:</strong> Disable internet for the app via Android Settings → Apps → CodeCourse → Data usage → Background data / Unrestricted data</li>
+            </ul>
+
+            <h2>9. Security</h2>
+            <ul>
+                <li>All local storage uses Android's sandboxed storage (no world-readable files)</li>
+                <li>Network call (Code Runner) uses HTTPS with certificate pinning not required (public API)</li>
+                <li>No encryption keys stored — no sensitive data to encrypt</li>
+                <li>App is not debuggable in release builds (<code>android:debuggable="false"</code>)</li>
+            </ul>
+
+            <h2>10. International Transfers</h2>
+            <p>No data leaves your device except the optional Code Runner call to Piston API (hosted in the US). If you are in the EU/UK/India, you may disable the Code Runner by using the app offline.</p>
+
+            <h2>11. Changes to This Policy</h2>
+            <p>We may update this policy for:</p>
+            <ul>
+                <li>New app features (e.g., if we add cloud sync in future — <strong>opt-in only</strong>)</li>
+                <li>Legal requirement changes</li>
+                <li>Clarity improvements</li>
+            </ul>
+            <p>Updates will be posted in the app (Settings → Legal → Privacy Policy) and the <code>CHANGELOG.md</code> in the app repository. Continued use after changes constitutes acceptance.</p>
+            <p><em>August 30, 2026 revision:</em> corrected the Permissions table (Section 4) to accurately reflect <code>ACCESS_NETWORK_STATE</code>, <code>FOREGROUND_SERVICE</code>, <code>RECEIVE_BOOT_COMPLETED</code>, and <code>WAKE_LOCK</code>, which are declared and used to support the daily reminder feature via WorkManager; removed <code>SCHEDULE_EXACT_ALARM</code>, which is not requested; and added the in-app support phone number to Section 12. Verified against app build v1.3.1 (versionCode 14).</p>
+
+            <h2>12. Contact</h2>
+            <p><strong>We With All 4 Students</strong><br>
+            📧 privacy@wewithall.com<br>
+            📞 8792381530<br>
+            🌐 <a href="https://wewithall.com" target="_blank" rel="noopener">https://wewithall.com</a><br>
+            📱 Instagram: <a href="https://instagram.com/wewithall4ever" target="_blank" rel="noopener">@wewithall4ever</a></p>
+            <p>For data protection inquiries, email <strong>privacy@wewithall.com</strong> with subject "Privacy Policy — CodeCourse".</p>
+
+            <h2>13. Summary (TL;DR)</h2>
+            <div class="tl-dr">
+                <h3>Quick Answers</h3>
+                <table>
+                    <thead><tr><th>Question</th><th>Answer</th></tr></thead>
+                    <tbody>
+                        <tr><td>Do you collect my personal info?</td><td><span class="badge badge-no">No</span></td></tr>
+                        <tr><td>Do you track me?</td><td><span class="badge badge-no">No</span></td></tr>
+                        <tr><td>Do I need an account?</td><td><span class="badge badge-no">No</span></td></tr>
+                        <tr><td>Does the app work offline?</td><td><span class="badge badge-yes">Yes, 100%</span></td></tr>
+                        <tr><td>Is my data sold?</td><td><span class="badge badge-no">No — we have none to sell</span></td></tr>
+                        <tr><td>Can I delete my data?</td><td><span class="badge badge-yes">Yes — uninstall or Settings → Reset Progress</span></td></tr>
+                        <tr><td>Is it safe for kids?</td><td><span class="badge badge-yes">Yes — no data collection at all</span></td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p style="margin-top: 24px; font-style: italic; color: var(--fg-muted);">This policy is written in plain language, not legalese. If something is unclear, email us.</p>
+        </article>
+
+        <footer>
+            <p>CodeCourse by <strong>We With All 4 Students</strong></p>
+            <p>📧 privacy@wewithall.com &nbsp;|&nbsp; 📞 8792381530 &nbsp;|&nbsp; 🌐 <a href="https://wewithall.com">wewithall.com</a> &nbsp;|&nbsp; 📱 <a href="https://instagram.com/wewithall4ever">@wewithall4ever</a></p>
+            <p>Last updated: August 30, 2026</p>
+        </footer>
+    </div>
+</body>
+</html>
